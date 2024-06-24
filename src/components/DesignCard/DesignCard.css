@@ -1,0 +1,98 @@
+.design-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 300px; /* Set a fixed width */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  margin: 10px; /* Space around each card */
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%; /* Ensure image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.card-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.card-details {
+  padding: 12px;
+}
+
+.card-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.stat-icon {
+  margin-right: 4px;
+}
+
+.design-card.searched-color {
+  border-color: #007bff; /* Adjust as per your design */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.design-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.design-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+/* DesignCard.css */
+
+
+.card-image {
+  cursor: pointer; /* Ensure cursor changes on hover for click indication */
+}
+
+
+  
+
+

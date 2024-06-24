@@ -1,0 +1,61 @@
+.image-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.image-details .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.image-details .content {
+  position: relative;
+  background: white;
+  padding: 80px; /* Increased padding for more space */
+  border-radius: 40px; /* Increased border-radius for rounded corners */
+  max-width: 90%; /* Adjusted maximum width */
+  max-height: 90%; /* Adjusted maximum height */
+  overflow: auto; /* Enable scrolling if content exceeds container */
+  z-index: 1001;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-details img {
+  width: auto;
+  height: auto;
+  max-width: 90%; /* Adjusted to fill the container width */
+  max-height: 70%; /* Adjusted to fill the container height */
+  border-radius: 30px; /* Increased border-radius for images */
+  margin-bottom: 60px; /* Increased margin-bottom for space below image */
+}
+
+.image-details .details {
+  margin-bottom: 80px; /* Increased margin-bottom for space below details */
+  width: 80%; /* Adjusted width for details container */
+}
+
+.image-details h2 {
+  margin-bottom: 80px; /* Increased margin-bottom for space below heading */
+  font-size: 30px; /* Increased font size for heading */
+}
+
+.image-details p {
+  margin-bottom: 50px; /* Increased margin-bottom for space below paragraphs */
+  font-size: 20px; /* Increased font size for paragraphs */
+}

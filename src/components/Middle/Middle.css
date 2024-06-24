@@ -1,0 +1,226 @@
+/* src/components/Hero/Hero.css */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+
+.hero-middle {
+  flex: 1;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensure categories wrap on smaller screens */
+  justify-content: center; /* Center align categories */
+  margin-top: 20px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.categories a:hover {
+  color: #ea4c89;
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+.categories a:before,
+.categories a:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: none;
+  z-index: -1;
+}
+
+.categories a:before {
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+
+.categories a:after {
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+.categories a:hover:before,
+.categories a:hover:after {
+  display: block;
+}
+
+.filter-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-icon {
+  font-size: 16px;
+}
+
+.filters-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.filter-box {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.filters-left,
+.filters-right {
+  flex: 1;
+  min-width: 0; /* Allow flex items to shrink below their intrinsic width */
+}
+
+.filters-left {
+  margin-right: 20px;
+}
+
+.filters-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filters-left h3,
+.filters-right h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.search-input {
+  flex: 1;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.color-search {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.color-icon {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.color-input {
+  flex: 1;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.color-input::placeholder {
+  color: #999;
+}
+
+.color-search-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.color-search-button:hover {
+  background-color: #0056b3;
+}
+
+.color-picker {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+  
+  .categories {
+    flex-direction: column; /* Stack categories vertically on smaller screens */
+    gap: 10px; /* Reduce gap between categories */
+    text-align: center; /* Center align text */
+  }
+
+  .filter-box {
+    flex-direction: column; /* Stack filter boxes vertically on smaller screens */
+  }
+}

@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}

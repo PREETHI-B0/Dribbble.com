@@ -1,0 +1,37 @@
+.design-gallery {
+  padding: 2rem; /* Adjust padding around the grid */
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically fit columns with a minimum of 300px */
+  gap: 20px; /* Adjust gap between grid items */
+  padding: 20px; /* Adjust padding around the grid */
+  margin: 0 auto; /* Center align the grid */
+}
+
+@media (min-width: 768px) {
+  .design-grid {
+    grid-template-columns: repeat(4, 1fr); /* Four columns per row on larger screens */
+  }
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.load-more-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,18 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.App {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
