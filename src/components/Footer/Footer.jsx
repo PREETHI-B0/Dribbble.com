@@ -14,7 +14,7 @@ const Footer = ({ handleLoadMore }) => {
       <div className={styles.footerContent}>
         <div className={styles.topSection}>
           <div className={styles.logoSection}>
-            <img src="src/assets/image/logo.png" alt="Dribbble Logo" className={styles.logo} />
+            <img src="/image/logo.png" alt="Dribbble Logo" className={styles.logo} />
           </div>
           <nav className={styles.footerNav}>
             <ul className={styles.footerNavList}>

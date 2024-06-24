@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { FaSearch } from 'react-icons/fa';
-import logo from '../../assets/image/logo.png'; // Adjust the path based on your project structure
-import profile from '../../assets/image/profile.jpg';
+ // Adjust the path based on your project structure
+
 const Header = () => {
   return (
     <header className="header">
@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       <div className="header-center">
         <div className="logo">
-          <img src={logo} alt="logo" />
+        <img src="/image/logo.png" alt="logo" />
         </div>
       </div>
       <div className="header-right">
@@ -50,7 +50,7 @@ const Header = () => {
           <input type="text" className="search-input" placeholder="Search..." />
         </div>
         <div className="profile-icon">
-        <img src={profile} alt="Profile" />
+        <img src="/image/profile.jpg" alt="profile" />
         </div>
       </div>
     </header>
